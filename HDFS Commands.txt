@@ -1,0 +1,16 @@
+# This command is use to copy all the csv files to the hdfs file system in the given directory from the local file system 
+
+hdfs dfs -put *.csv '/Spark/Assignment2'
+
+# This command is used to verify all the required dataset is present in hdfs or not
+
+hdfs dfs -ls '/Spark/Assignment2'
+
+# Made a Solution Directory inside Assignment2 to store the output of all the questions in a seperate csv file 
+
+hdfs dfs -mkdir '/Spark/Assignment2/Solution'
+
+# Finally Checking if all the files are getting saved in the solution directory
+
+hdfs dfs -ls '/Spark/Assignment2/Solution'
+
